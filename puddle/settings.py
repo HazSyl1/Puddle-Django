@@ -28,7 +28,7 @@ SECRET_KEY = "django-insecure-1a#!3jm!l$gka&5x%albucs@nj0uwr1sl7yel0ydxppj3^g^(7
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["*"]
 
 LOGIN_URL='/login/'  #tried to visit page u dont have acces to you'll redir here 
 LOGIN_REDIRECT_URL='/'  # send to frontpage when loggedin
