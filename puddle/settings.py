@@ -11,6 +11,9 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 """
 
 from pathlib import Path
+import dj_database_url
+import os
+
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -81,12 +84,26 @@ WSGI_APPLICATION = "puddle.wsgi.application"
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
+#LCOAL DB
+
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.sqlite3",
         "NAME": BASE_DIR / "db.sqlite3",
     }
 }
+
+
+# DATABASES = {
+#         'default': {
+#             'ENGINE': 'django.db.backends.postgresql',
+#             'NAME': 'Puddle',
+#             'CLIENT': {
+#                 'host': 'postgres://puddle_ja0j_user:iVB1MDCFIOti1eTxc4cR9aL5U3avvneK@dpg-cpq1tieehbks73cb09a0-a.oregon-postgres.render.com/puddle_ja0j',
+#             }  
+#         }
+# }
+
 
 
 # Password validation
